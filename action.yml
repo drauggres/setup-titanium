@@ -1,0 +1,10 @@
+name: 'Setup AMPLIFY™ Titanium SDK'
+description: 'Setup your runner with Titanium SDK'
+author: 'Sergey Volkov <s.volkov@netris.ru>'
+inputs:
+  sdk-version:
+    description: 'The SDK version to install. Same format as for `ti sdk install` command'
+    required: true
+runs:
+  using: 'node12'
+  main: 'lib/setup-titanium.js'
